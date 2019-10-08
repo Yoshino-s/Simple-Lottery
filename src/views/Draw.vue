@@ -96,7 +96,7 @@ export default class Draw extends Vue {
   }
 
   submit() {
-    this.title = 'Sign';
+    this.title = 'Draw';
     const ch = btoa(this.form.code).slice(0, 5) + btoa(`${this.form.count}sallt`)[0];
     fetch('./api/draw', {
       method: 'POST',
